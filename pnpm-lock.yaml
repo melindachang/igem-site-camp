@@ -2,7 +2,11 @@ lockfileVersion: 5.3
 
 specifiers:
   aos: ^2.3.4
+  jquery: ^3.6.0
   vite: ^2.8.6
+
+dependencies:
+  jquery: 3.6.0
 
 devDependencies:
   aos: 2.3.4
@@ -254,6 +258,10 @@ packages:
     dependencies:
       has: 1.0.3
     dev: true
+
+  /jquery/3.6.0:
+    resolution: {integrity: sha512-JVzAR/AjBvVt2BmYhxRCSYysDsPcssdmTFnzyLEts9qNwmjmu4JTAMYubEfwVOSwpQ1I1sKKFcxhZCI2buerfw==}
+    dev: false
 
   /lodash.debounce/4.0.8:
     resolution: {integrity: sha1-gteb/zCmfEAF/9XiUVMArZyk168=}

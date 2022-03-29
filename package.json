@@ -22,5 +22,8 @@
   "devDependencies": {
     "aos": "^2.3.4",
     "vite": "^2.8.6"
+  },
+  "dependencies": {
+    "jquery": "^3.6.0"
   }
 }

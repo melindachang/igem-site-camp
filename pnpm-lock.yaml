@@ -1,12 +1,26 @@
 lockfileVersion: 5.3
 
 specifiers:
+  aos: ^2.3.4
   vite: ^2.8.6
 
 devDependencies:
+  aos: 2.3.4
   vite: 2.8.6
 
 packages:
+
+  /aos/2.3.4:
+    resolution: {integrity: sha512-zh/ahtR2yME4I51z8IttIt4lC1Nw0ktsFtmeDzID1m9naJnWXhCoARaCgNOGXb5CLy3zm+wqmRAEgMYB5E2HUw==}
+    dependencies:
+      classlist-polyfill: 1.2.0
+      lodash.debounce: 4.0.8
+      lodash.throttle: 4.1.1
+    dev: true
+
+  /classlist-polyfill/1.2.0:
+    resolution: {integrity: sha1-k1vC39lFiodrJ5YXUUY4vKqWSi4=}
+    dev: true
 
   /esbuild-android-64/0.14.28:
     resolution: {integrity: sha512-A52C3zq+9tNwCqZ+4kVLBxnk/WnrYM8P2+QNvNE9B6d2OVPs214lp3g6UyO+dKDhUdefhfPCuwkP8j2A/+szNA==}
@@ -239,6 +253,14 @@ packages:
     resolution: {integrity: sha512-SdNCUs284hr40hFTFP6l0IfZ/RSrMXF3qgoRHd3/79unUTvrFO/JoXwkGm+5J/Oe3E/b5GsnG330uUNgRpu1PA==}
     dependencies:
       has: 1.0.3
+    dev: true
+
+  /lodash.debounce/4.0.8:
+    resolution: {integrity: sha1-gteb/zCmfEAF/9XiUVMArZyk168=}
+    dev: true
+
+  /lodash.throttle/4.1.1:
+    resolution: {integrity: sha1-wj6RtxAkKscMN/HhzaknTMOb8vQ=}
     dev: true
 
   /nanoid/3.3.2:

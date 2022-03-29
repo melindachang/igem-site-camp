@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/melindachang/igem-site-camp#readme",
   "devDependencies": {
+    "aos": "^2.3.4",
     "vite": "^2.8.6"
   }
 }

@@ -1,0 +1,25 @@
+{
+  "name": "igem-site-camp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite serve",
+    "build": "vite"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/melindachang/igem-site-camp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/melindachang/igem-site-camp/issues"
+  },
+  "homepage": "https://github.com/melindachang/igem-site-camp#readme",
+  "devDependencies": {
+    "vite": "^2.8.6"
+  }
+}

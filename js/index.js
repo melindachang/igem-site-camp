@@ -75,7 +75,7 @@ $(document).ready(function () {
           Preloader Activation
     <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
-  $(window).load(function () {
+  $(window).on('load', function () {
     setTimeout(function () {
       $('#loading').fadeOut(500);
     }, 1000);

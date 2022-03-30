@@ -3,12 +3,18 @@ import $ from 'jquery';
 import 'aos/dist/aos.css';
 
 ('use strict');
-$(document).ready(function () {
-  AOS.init();
-  window.addEventListener('load', AOS.refresh);
-  AOS.init({
-    once: true,
-  });
+$(window).on('load', function () {
+  setTimeout(function () {
+    $('#loading').fadeOut(500);
+    AOS.init();
+    window.addEventListener('load', AOS.refresh);
+    AOS.init({
+      once: true,
+    });
+  }, 1000);
+  setTimeout(function () {
+    $('#loading').remove();
+  }, 2000);
 
   window.onscroll = function () {
     scrollFunction();
@@ -30,15 +36,15 @@ $(document).ready(function () {
   /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>      
            Prcing Dynamic Script
     <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-  $('#table-price-value .toggle-btn').on('click', function (e) {
-    console.log($(e.target).parent().parent().hasClass('monthly-active'));
-    $(e.target).toggleClass('clicked');
-    if ($(e.target).parent().parent().hasClass('monthly-active')) {
-      $(e.target).parent().parent().removeClass('monthly-active').addClass('yearly-active');
-    } else {
-      $(e.target).parent().parent().removeClass('yearly-active').addClass('monthly-active');
-    }
-  });
+  // $('#table-price-value .toggle-btn').on('click', function (e) {
+  //   console.log($(e.target).parent().parent().hasClass('monthly-active'));
+  //   $(e.target).toggleClass('clicked');
+  //   if ($(e.target).parent().parent().hasClass('monthly-active')) {
+  //     $(e.target).parent().parent().removeClass('monthly-active').addClass('yearly-active');
+  //   } else {
+  //     $(e.target).parent().parent().removeClass('yearly-active').addClass('monthly-active');
+  //   }
+  // });
 
   $('[data-pricing-trigger]').on('click', function (e) {
     $(e.target).addClass('active').siblings().removeClass('active');
@@ -75,12 +81,6 @@ $(document).ready(function () {
           Preloader Activation
     <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
-  $(window).on('load', function () {
-    setTimeout(function () {
-      $('#loading').fadeOut(500);
-    }, 1000);
-    setTimeout(function () {
-      $('#loading').remove();
-    }, 2000);
-  });
+  // $(window).on('load', function () {
+  // });
 });

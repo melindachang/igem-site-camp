@@ -2589,7 +2589,7 @@ li.sub-menu--item.nav-item-has-children i {
 }
 
 .pricing-area-l14 .btn-toggle-2 {
-  width: 220px;
+  width: 250px;
   height: 42px;
   border-radius: 30px;
   background-color: #fff !important;
@@ -2601,7 +2601,7 @@ li.sub-menu--item.nav-item-has-children i {
 
 .pricing-area-l14 .btn-toggle-2:before {
   position: absolute;
-  content: "Monthly";
+  content: "No Lunch";
   width: 46%;
   font-size: 13px;
   font-weight: 700;
@@ -2616,7 +2616,7 @@ li.sub-menu--item.nav-item-has-children i {
 
 .pricing-area-l14 .btn-toggle-2:after {
   position: absolute;
-  content: "Yearly";
+  content: "With Lunch";
   width: 46%;
   font-size: 13px;
   font-weight: 700;

@@ -17199,6 +17199,10 @@ fieldset:disabled .btn {
 .rounded-3 {
   border-radius: 0.3rem !important;
 }
+.rounded-8 {
+  border-radius: 8px !important;
+}
+
 
 .rounded-10 {
   border-radius: 10px !important;

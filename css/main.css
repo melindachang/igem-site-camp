@@ -2292,6 +2292,27 @@ li.sub-menu--item.nav-item-has-children i {
   color: #0c39f8 !important;
 }
 
+.about-btn .btn {
+  border: 0;
+  padding: 0;
+  min-width: initial;
+  font-family: Karla;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 28px;
+  letter-spacing: -0.4px;
+  color: #0c39f8;
+}
+
+
+.about-btn .btn i {
+  margin-left: 22px;
+}
+
+.about-btn .btn:hover {
+  color: #0c39f8 !important;
+}
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>      
    Content-area-2-L-14
 

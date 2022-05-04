@@ -1,12 +1,14 @@
-lockfileVersion: 5.3
+lockfileVersion: 5.4
 
 specifiers:
   aos: ^2.3.4
   jquery: ^3.6.0
+  million: ^1.8.9-0
   vite: ^2.8.6
 
 dependencies:
   jquery: 3.6.0
+  million: 1.8.9-0
 
 devDependencies:
   aos: 2.3.4
@@ -270,6 +272,10 @@ packages:
   /lodash.throttle/4.1.1:
     resolution: {integrity: sha1-wj6RtxAkKscMN/HhzaknTMOb8vQ=}
     dev: true
+
+  /million/1.8.9-0:
+    resolution: {integrity: sha512-xqSMsKgDZF8xCv9PpE8JGsIxb9UL1aoqxLY+5fa9548DZyyl0KMKqrS8DwAhSRfRSvefu6jcVwEtRpoP0FVnaA==}
+    dev: false
 
   /nanoid/3.3.2:
     resolution: {integrity: sha512-CuHBogktKwpm5g2sRgv83jEy2ijFzBwMoYA60orPDR7ynsLijJDqgsi4RDGj3OJpy3Ieb+LYwiRmIOGyytgITA==}

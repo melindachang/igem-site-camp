@@ -2,20 +2,17 @@ import AOS from 'aos';
 import $ from 'jquery';
 import 'aos/dist/aos.css';
 
-('use strict');
-$(window).on('load', function () {
+import { router } from 'million/router';
+
+router('body');
+
+const draw = () => {
+  $('#loading').show();
   setTimeout(function () {
     $('#loading').fadeOut(500);
-    AOS.init();
-    window.addEventListener('load', AOS.refresh);
-    AOS.init({
-      once: true,
-    });
   }, 1000);
-  setTimeout(function () {
-    $('#loading').remove();
-  }, 2000);
 
+  AOS.init();
   window.onscroll = function () {
     scrollFunction();
   };
@@ -33,7 +30,7 @@ $(window).on('load', function () {
     }
   }
 
-  /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>      
+  /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
            Prcing Dynamic Script
     <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
   $('#table-price-value .toggle-btn').on('click', function (e) {
@@ -57,7 +54,7 @@ $(window).on('load', function () {
     }
   });
 
-  /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>      
+  /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
            Smooth Scroll
     <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
@@ -76,11 +73,7 @@ $(window).on('load', function () {
       );
     } // End if
   });
+};
 
-  /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>      
-          Preloader Activation
-    <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-
-  // $(window).on('load', function () {
-  // });
-});
+document.addEventListener('DOMContentLoaded', () => requestAnimationFrame(draw));
+window.addEventListener('million:navigate', () => requestAnimationFrame(draw));

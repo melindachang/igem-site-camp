@@ -8,6 +8,7 @@ module.exports = defineConfig({
         main: resolve(__dirname, 'index.html'),
         about: resolve(__dirname, 'views/about.html'),
         info: resolve(__dirname, 'views/camp-information.html'),
+        hackathon: resolve(__dirname, 'views/hackathon.html'),
       },
     },
   },
